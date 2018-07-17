@@ -24,6 +24,7 @@ public class MainExercise1 {
 		System.out.print(i + " ,");
 		
 		}
+		
 		System.out.println("");
 		
 		for ( int m = 1; m <= 10; m++) {
