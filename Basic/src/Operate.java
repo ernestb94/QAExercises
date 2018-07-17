@@ -1,4 +1,6 @@
 
+
+
 public class Operate {
 	public static int f (int a, int b, boolean bool) {
 		int total;
