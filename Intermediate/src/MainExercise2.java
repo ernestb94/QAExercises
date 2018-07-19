@@ -14,16 +14,25 @@ public class MainExercise2 {
 		//
 		//
 		People[] pArray = new People[5];
-		
-		People p1 = new People("Ernest", 21, "Trainee");
-	
-		
-		
-	
+		pArray[0] = new People("Ernest", 23, "Scientist");
+                pArray[1] = new People("Esther", 23, "Astronaut");
+                pArray[2] = new People("Bibek",21, "Doctor");
+                pArray[3] = new People("Roy", 21, "Cowboy");
+                pArray[4] = new People("Maran", 19, "Lawyer");
 
-		System.out.println(p1.getName());
-		System.out.println(p1.getAge());
-		System.out.println(p1.getJobTitle());
+                for (int i = 0; i <pArray.length ; i++ ){
+                System.out.println(pArray[i].getName());
+                System.out.println(pArray[i].getAge());
+                System.out.println(pArray[i].getJobTitle());
+                System.out.println("------------------------");
+                }
+
+                //Look for specific person
+    
+                System.out.println("Found the person!");
+                System.out.println(pArray[2].getName());
+                System.out.println(pArray[2].getAge());
+                System.out.println(pArray[2].getJobTitle());
 		
 
 	}
