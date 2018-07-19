@@ -4,25 +4,19 @@ public class UniqueSum {
 		if (n1 == n2 && n2 == n3) {
 			return 0;
 		}
-			else if (n1 != n2 && n2 != n3) {
-			return n1 + n2 + n3;
-			}
-			else if (n1 != n2 && n2 != n3) {
-			return n1;
-			}
-			else if (n1 == n2 && n2 != n3) {
-			return n3;
-			}
-			else {
-				System.out.println("Need Value");
-				return 0;
-			}
-			}
-			
-		}
-				
 
-		
-		
-		
-		
+		else if (n1 != n2 && n2 == n3) {
+			return n1;
+		} else if (n1 == n2 && n2 != n3) {
+			return n3;
+		} else if (n1 == n3 && n3 != n2) {
+			return n2;
+		} else if (n1 != n2 && n2 != n3) {
+			return n1 + n2 + n3;
+		} else {
+			System.out.println("Need Value");
+			return 0;
+		}
+	}
+
+}
